@@ -108,4 +108,13 @@ public class Oro extends Metal {
 		return ret;
 	}
 
-}
+	@Override
+	public int compareTo(Metal o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	}
+
+

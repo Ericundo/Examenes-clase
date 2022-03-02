@@ -3,11 +3,13 @@ package entidades;
 import java.time.LocalDate;
 
 //Examen 1 Ejercicio 5, parte A
-public abstract class Metal {
+public abstract class Metal implements Comparable<Metal>{;
+
 	public abstract float maximaPurezaAlcanzada();
 	public abstract float[] cotasPurezaEfectiva();
 	
 	public LocalDate fecha;
+	public float pureza;
 	public boolean asignada = false;
 	
 	public Metal() {
@@ -17,6 +19,11 @@ public abstract class Metal {
 		this.fecha = f;
 		this.asignada = b;
 	}
+	
+	
+	
+	
+	
 	
 	
 	public LocalDate getFecha() {
@@ -30,6 +37,9 @@ public abstract class Metal {
 	}
 	public void setAsignada(boolean asignada) {
 		this.asignada = asignada;
+	}
+	public float getPureza() {
+		return pureza;
 	}
 	
 }

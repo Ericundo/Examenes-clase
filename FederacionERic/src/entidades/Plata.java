@@ -104,4 +104,13 @@ public class Plata extends Metal{
 		ret = new Plata(id, pureza, fecha);
 		return ret;
 	}
-}
+
+	@Override
+	public int compareTo(Metal o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	}
+

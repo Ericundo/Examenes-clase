@@ -78,4 +78,9 @@ public class NIE extends Documentacion {
 		return Validaciones.validarNIE(this.mostrar());
 	}
 
+	@Override
+	public int compareTo(Documentacion o) {
+		return 0;
+	}
+
 }

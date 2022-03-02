@@ -65,4 +65,9 @@ public class NIF extends Documentacion {
 		return Validaciones.validarNIF(this);
 	}
 
+	@Override
+	public int compareTo(Documentacion o) {
+		return 0;
+	}
+
 }
